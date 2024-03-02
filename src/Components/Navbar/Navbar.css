@@ -12,10 +12,11 @@
     gap: 10px;
 }
 
-.nav-logo p{
+.nav-logo p>a{
     color: #171717;
     font-size: xx-large;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .nav-menu{
@@ -36,6 +37,11 @@
     gap: 3px;
     cursor: pointer;
     font-size: smaller;
+}
+
+.nav-menu li>a{
+    text-decoration: none;
+    color: #626262;
 }
 
 .nav-menu hr{
