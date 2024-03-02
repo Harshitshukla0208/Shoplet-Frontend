@@ -14,7 +14,7 @@
 
 .nav-logo p{
     color: #171717;
-    font-size: 38px;
+    font-size: xx-large;
     font-weight: 600;
 }
 
@@ -35,6 +35,7 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    font-size: smaller;
 }
 
 .nav-menu hr{
@@ -50,6 +51,9 @@
     align-items: center;
     gap: 45px;
 }
+.nav-login-cart-icon{
+    height: 32px;
+}
 
 .nav-login-cart button{
     width: 121px;
@@ -58,7 +62,7 @@
     border: 1px solid #7a7a7a;
     border-radius: 75px;
     color: #515151;
-    font-size: 20px;
+    font-size: medium;
     font-weight: 500;
     background: white;
     cursor: pointer;
