@@ -22,8 +22,8 @@
 
 .banner-left p{
     color: #171717;
-    font-size: 100px;
-    font-weight: 700;
+    font-size: 70px;
+    font-weight: 500;
 }
 
 .banner-hand-icon{
@@ -56,4 +56,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.banner-right img{
+    height: 600px;
 }
