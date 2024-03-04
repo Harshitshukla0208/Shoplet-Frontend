@@ -4,6 +4,7 @@ import Breadcrum from '../Components/Breadcrums/Breadcrum';
 import {ShopContext} from '../Context/ShopContext'
 import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox';
+import RelatedProducts from '../Components/RelatedProducts/RelatedProducts';
 
 const Product = () => {
     
@@ -16,6 +17,7 @@ const Product = () => {
             <Breadcrum product={product} />
             <ProductDisplay product={product} /> { /*using this prop we will display the details of that product */}
             <DescriptionBox />
+            <RelatedProducts />
         </div>
     )
 }
