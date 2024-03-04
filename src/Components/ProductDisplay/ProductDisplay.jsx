@@ -1,10 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './ProductDisplay.css'
 import star_icon from "../Assets/star_icon.png"
 import star_dull_icon from "../Assets/star_dull_icon.png"
+import { ShopContext } from '../../Context/ShopContext'
 
 const ProductDisplay = (props) => {
     const {product} = props;
+
+    //importing our cart functions using context api
+    const {addToCart} = useContext(ShopContext);
     
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -49,7 +53,7 @@ const ProductDisplay = (props) => {
                         <div>XL</div>
                         <div>XXL</div>
                     </div>
-                    <button>ADD TO CART</button>
+                    <button onClick={() => {addToCart(product.id)}}>ADD TO CART</button>
                     <p className='productdisplay-right-category'><span>Category :</span>Women, T-Shirt, Crop Top</p>
                     <p className='productdisplay-right-category'><span>Tags :</span>#Modern, #Latest</p>
                 </div>
