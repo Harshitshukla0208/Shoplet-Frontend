@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ProductDisplay.css'
 import star_icon from "../Assets/star_icon.png"
 import star_dull_icon from "../Assets/star_dull_icon.png"
 
 const ProductDisplay = (props) => {
-    const {product} = props
+    const {product} = props;
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='productdisplay'>
             <div className="productdisplay-left">
@@ -26,7 +31,7 @@ const ProductDisplay = (props) => {
                     <img src={star_icon} alt="" />
                     <img src={star_icon} alt="" />
                     <img src={star_dull_icon} alt="" />
-                    <p>(69)</p>
+                    <p>(133)</p>
                 </div>
                 <div className="productdisplay-right-prices">
                     <div className="productdisplay-right-price-old">${product.old_price}</div>
