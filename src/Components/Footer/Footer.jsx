@@ -1,8 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import footer_logo from '../Assets/logo_big.png'
-import instagram_icon from '../Assets/instagram_icon.png'
-import whatsapp_icon from '../Assets/whatsapp_icon.png'
+import insta_icon from '../Assets/insta_icon.png'
+import linkedin_icon from '../Assets/linkedin_icon.png'
+import github_icon from '../Assets/github_icon_new.png'
 
 const Footer = () => {
     return (
@@ -20,10 +21,19 @@ const Footer = () => {
             </ul>
             <div className="footer-social-icons">
                 <div className="footer-icons-container">
-                    <img src={instagram_icon} alt="instagram link" />
+                    <a href="https://github.com/Harshitshukla0208" target="_blank">
+                        <img src={github_icon} alt="GitHub" />
+                    </a>
                 </div>
                 <div className="footer-icons-container">
-                    <img src={whatsapp_icon} alt="whatsapp contact" />
+                    <a href="https://www.linkedin.com/in/harshit-shukla-9a5950239/" target="_blank">
+                        <img src={linkedin_icon} alt="LinkedIn" />
+                    </a>
+                </div>
+                <div className="footer-icons-container">
+                    <a href="https://www.instagram.com/harshitshukla_780/" target="_blank">
+                        <img src={insta_icon} alt="Instagram" />
+                    </a>
                 </div>
             </div>
             <div className="footer-copyright">
