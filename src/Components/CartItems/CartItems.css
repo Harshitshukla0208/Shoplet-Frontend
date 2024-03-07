@@ -52,19 +52,49 @@
     justify-content: space-between;
     padding: 15px 0px;
 }
-.cartitems-total button{
+.cartitems-total button {
     width: 262px;
     height: 58px;
     outline: none;
     border: none;
-    border-radius: 145px;
+    border-radius: 145px; /* Circular shape */
     background: #ff5a5a;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     margin-top: 23px;
+    position: relative; /* Added for pseudo-element */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
+
+.cartitems-total button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
+    border-radius: 145px; /* Match button border-radius */
+    transition: transform 0.4s ease; /* Smooth transition */
+    z-index: -1; /* Behind the button text */
+    transform: translate(-50%, -50%) scale(0); /* Initially scaled down */
+}
+
+.cartitems-total button:hover:before {
+    transform: translate(-50%, -50%) scale(3); /* Scale up on hover */
+}
+
+.cartitems-total button:hover {
+    background: #ff4a4a; /* Darker color on hover */
+}
+
+.cartitems-total button:active {
+    transform: scale(0.95); /* Slight scale down on click */
+}
+
 
 .cartitems-promocode{
     flex: 1;

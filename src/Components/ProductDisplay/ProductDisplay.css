@@ -80,6 +80,13 @@
     outline: none;
     cursor: pointer;
 }
+.productdisplay-right button:hover {
+    background: #FF6464; /* lighter shade of red */
+}
+
+.productdisplay-right button:active {
+    transform: translateY(2px); /* slight downward movement when clicked */
+}
 .productdisplay-right-category{
     margin-top: 10px;
 }
