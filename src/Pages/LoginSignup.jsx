@@ -39,6 +39,7 @@ const LoginSignup = () => {
             alert(responseData.errors)
         }
     }
+    
     const signup = async() => {
         console.log("signup function executed", formData)
         let responseData;
